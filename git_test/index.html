@@ -10,7 +10,7 @@
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background-color: #1e0529;
+            background-color: #270735;
             color: white;
         }
 
@@ -46,7 +46,6 @@
             background-color: white;
             border-radius: 50%;
             opacity: 0.8;
-            
         }
 
         @keyframes sparkle-animation {
@@ -63,14 +62,10 @@
         .container {
             max-width: 100%;
             margin: auto;
-            padding: 10px; /* padding: top right bottom left; */
-            padding-top: 10px;
-            padding-right: 20px;
-            padding-bottom: 10px;
-            padding-left: 10px;
+            padding: 16px;
             text-align: center;
+            padding-bottom: 100px; /* Ensure there is space for the fixed bottom bar */
         }
-        
 
         .row {
             display: flex;
@@ -138,11 +133,11 @@
             border-radius: 25px;
             margin: 15px 0;
             transition: background-color 0.3s;
-            background-color: #592668;
+            background: linear-gradient(to bottom, #9d2cc3 30%, #cc8de1 60%, #9d2cc3 100%);
         }
 
         .leaderboard .row:hover {
-            background-color: #8f5498;
+            background: linear-gradient(to bottom, #cb99dc 30%, #ceb0d7 60%, #9d2cc3 100%);
         }
 
         .leaderboard img.avatar {
@@ -167,25 +162,25 @@
         .menu {
             display: flex;
             justify-content: space-around;
-            margin-top: 20px;
             background-color: #210f27;
             align-items: center;
-            justify-content: space-between;
-            padding: 1px;
+            padding: 10px;
             border-radius: 15px;
-            margin: 15px 0;
             transition: background-color 0.3s;
         }
 
         .bottom {
-            margin-top: 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right:0;
+            width: 100%;
             background-color: #9d2cc3;
             align-items: center;
-            justify-content: space-between;
-            padding: 1px;
-            border-radius: 15px;
-            margin: 15px 0;
+            padding: 10px;
+            border-radius: 15px 15px 0 0;
             transition: background-color 0.3s;
+            padding-right: 10px;
         }
 
         .menu div {
@@ -321,28 +316,28 @@
                 <div class="score"><img src="assets/download.jpg" alt="Coin" class="coin">20453410</div>
             </div>
         </div>
-        <div class="bottom">
-            <div class="menu">
-                <div>
-                    <i class="fas fa-hand-pointer"></i>
-                    Tap
-                </div>
-                <div>
-                    <i class="fas fa-trophy"></i>
-                    Leaderboard
-                </div>
-                <div>
-                    <i class="fas fa-users"></i>
-                    Referral
-                </div>
-                <div>
-                    <i class="fas fa-tasks"></i>
-                    Tasks
-                </div>
-                <div>
-                    <i class="fas fa-wallet"></i>
-                    Wallet
-                </div>
+    </div>
+    <div class="bottom">
+        <div class="menu">
+            <div>
+                <i class="fas fa-hand-pointer"></i>
+                Tap
+            </div>
+            <div>
+                <i class="fas fa-trophy"></i>
+                Leaderboard
+            </div>
+            <div>
+                <i class="fas fa-users"></i>
+                Referral
+            </div>
+            <div>
+                <i class="fas fa-tasks"></i>
+                Tasks
+            </div>
+            <div>
+                <i class="fas fa-wallet"></i>
+                Wallet
             </div>
         </div>
     </div>
